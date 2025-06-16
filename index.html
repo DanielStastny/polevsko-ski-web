@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sjezdovka & Bikepark Polevsko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="brand">
+                    <img id="logo" src="assets/logo.png" alt="Polevsko Ski Logo" class="logo">
+                </a>
+                <div id="brand-text" class="brand-text">
+                    <span class="brand-name">Polevsko</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="provozni-rad.html" class="nav-link">Provozní řád</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Sjezdovka & Bikepark Polevsko</h1>
+                    <p class="hero-subtitle">Lyžování a traily v srdci Lužických hor</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bikepark Section -->
+        <section class="section" id="bikepark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Bikepark</h2>
+                    <div class="status-notice">
+                        <p><strong>Letní sezóna 2025 nebyla spuštěna.</strong> Děkujeme za pochopení.</p>
+                        <p>Trasy jsou k dispozici veřejnosti 24/7. Respektujte prosím <a href="provozni-rad.html#mtb-trails" class="link">pravidla parku</a>.</p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Přehled trailů</h3>
+                    </div>
+
+                    <div class="trail-content">
+                        <div class="map-section">
+                            <figure class="map-figure">
+                                <img src="assets/bikepark-map.jpg" alt="Mapa bikeparku Polevsko" class="map-image" onclick="openLightbox()">
+                                <figcaption class="map-caption">Mapa tras bikeparku (klikni pro zvětšení)</figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="trails-list">
+                            <div class="trail-item">
+                                <h4 class="trail-title">I. Kostelník</h4>
+                                <p class="trail-description">Společně s Blottendorfskou patří k našim hvězdným flowtrailům. Velmi svižná stezka.</p>
+                            </div>
+
+                            <div class="trail-item">
+                                <h4 class="trail-title">II. Skikros</h4>
+                                <p class="trail-description">Po startu na vás čeká 10 klopených zatáček, které vás dobře rozpumpují a připraví na tři lavice za sebou. Každý skok se dá bezpečně projet i bez odlepení se od země.</p>
+                            </div>
+
+                            <div class="trail-item">
+                                <h4 class="trail-title">III. Blottendorfská</h4>
+                                <p class="trail-description">Společně s Kostelníkem patří k našim hvězdným flowtrailům. Velmi svižná stezka.</p>
+                            </div>
+
+                            <div class="trail-item">
+                                <h4 class="trail-title">IV. Hrobník</h4>
+                                <p class="trail-description"><strong>Nejtěžší trať</strong> v bikeparku Polevsko. Určená pouze pro zkušené jezdce, kteří si hravě poradí s velkými skoky a technickými pasážemi.</p>
+                            </div>
+
+                            <div class="trail-item">
+                                <h4 class="trail-title">V. Vodárenské rendezvous</h4>
+                                <p class="trail-description">Krátká, ale o to intenzivnější trať. Na začátku vás čeká velká lavice, kterou určitě oceníte po delším objíždění hor. Druhá polovina tratě se pak klikatí mezi stromy a kořeny.</p>
+                            </div>
+
+                            <div class="trail-item">
+                                <h4 class="trail-title">Badass pumps!</h4>
+                                <p class="trail-description">Pumptrack je určen pro všechny věkové kategorie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-section">
+                    <h3 class="subsection-title">Stručná historie a filozofie</h3>
+                    <div class="history-content">
+                        <p>První myšlenky na vybudování bikeparku na Polevsku se začaly rodit v roce 2018. Po dlouhých přípravách jsme na podzim 2019 začali se stavbou a na jaře 2020 jsme otevřeli první traily.</p>
+                        <p>Traily jsme od <strong>začátku roku 2020 kompletně překopali</strong>. Na budování se podílí početná komunita bikerů a Sportovní klub Polevsko z.s. U všech stezek jsme radikálně vylepšili flow, udělali nové povrchy, klopenky, zkrátka došlo ke kompletnímu reshapingu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sjezdovka Section -->
+        <section class="section section-alt" id="sjezdovka">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sjezdovka</h2>
+                    <p class="section-subtitle">Sezóna 2024/2025 byla ukončena.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Sportovní areál Polevsko s.r.o.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Zavřít">&times;</button>
+            <img id="lightbox-img" src="" alt="Mapa bikeparku Polevsko" class="lightbox-image">
+            <div class="zoom-controls">
+                <button onclick="zoomIn()" class="zoom-btn">+</button>
+                <button onclick="zoomOut()" class="zoom-btn">−</button>
+                <button onclick="resetZoom()" class="zoom-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 25%, #fafbff 50%, #ffffff 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            font-weight: 400;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(239, 246, 255, 0.4) 0%, transparent 60%),
+                radial-gradient(circle at 80% 70%, rgba(219, 234, 254, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 60% 20%, rgba(224, 242, 254, 0.2) 0%, transparent 70%),
+                radial-gradient(circle at 40% 80%, rgba(147, 197, 253, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(248, 250, 255, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(219, 234, 254, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.03);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        .brand-text {
+            display: none;
+        }
+
+        .brand-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            font-weight: 400;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-alt {
+            background: rgba(239, 246, 255, 0.2);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-top: 1px solid rgba(219, 234, 254, 0.3);
+            border-bottom: 1px solid rgba(219, 234, 254, 0.3);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .subsection-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        /* Status Notice */
+        .status-notice {
+            background: #fff8e1;
+            border: 1px solid #ffecb3;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+
+        .status-notice p {
+            margin-bottom: 0.5rem;
+        }
+
+        .status-notice p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Content Card */
+        .content-card {
+            background: rgba(248, 250, 255, 0.5);
+            border-radius: 16px;
+            box-shadow: 
+                0 8px 32px rgba(59, 130, 246, 0.04),
+                0 2px 8px rgba(99, 102, 241, 0.06),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(219, 234, 254, 0.25);
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        /* Trail Content */
+        .trail-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .map-section {
+            position: sticky;
+            top: 120px;
+            background: rgba(239, 246, 255, 0.35);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: 
+                0 8px 32px rgba(59, 130, 246, 0.03),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(219, 234, 254, 0.2);
+        }
+
+        .map-figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        .map-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-image:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .map-caption {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        /* Trails List */
+        .trails-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .trail-item {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .trail-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .trail-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #2c3e50;
+        }
+
+        .trail-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #4a5568;
+        }
+
+        /* History Section */
+        .history-section {
+            background: rgba(224, 242, 254, 0.25);
+            border-radius: 16px;
+            box-shadow: 
+                0 8px 32px rgba(59, 130, 246, 0.03),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(186, 230, 253, 0.2);
+            padding: 3rem;
+        }
+
+        .history-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: #4a5568;
+        }
+
+        .history-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Links */
+        .link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .link:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow: auto;
+        }
+
+        .lightbox-content {
+            position: relative;
+            margin: auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover {
+            color: #bbb;
+        }
+
+        .lightbox-image {
+            max-width: none;
+            max-height: none;
+            width: auto;
+            height: auto;
+            transition: transform 0.3s ease;
+            transform-origin: center;
+            display: block;
+        }
+
+        .zoom-controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 12px;
+            border-radius: 12px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .zoom-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+            min-width: 44px;
+        }
+
+        .zoom-btn:hover {
+            background: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .content-card {
+                padding: 2rem;
+            }
+
+            .trail-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .map-section {
+                position: static;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .lightbox-close {
+                font-size: 30px;
+                right: 20px;
+            }
+
+            .zoom-controls {
+                bottom: 10px;
+                padding: 8px;
+            }
+
+            .zoom-btn {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 4rem 0;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.125rem;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+
+            .history-section {
+                padding: 2rem;
+            }
+        }
+    </style>
+
+    <script>
+        let currentZoom = 1;
+        
+        function openLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const thumbnailImg = document.querySelector('.map-image');
+            
+            lightboxImg.src = thumbnailImg.src;
+            lightbox.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            
+            // Wait for image to load, then set initial size
+            lightboxImg.onload = function() {
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+                const imageAspect = this.naturalWidth / this.naturalHeight;
+                
+                // Set initial size to fit viewport with some padding
+                let initialWidth = Math.min(viewportWidth * 0.8, this.naturalWidth);
+                let initialHeight = initialWidth / imageAspect;
+                
+                if (initialHeight > viewportHeight * 0.8) {
+                    initialHeight = viewportHeight * 0.8;
+                    initialWidth = initialHeight * imageAspect;
+                }
+                
+                this.style.width = initialWidth + 'px';
+                this.style.height = initialHeight + 'px';
+                
+                resetZoom();
+            };
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        function zoomIn() {
+            currentZoom += 0.25;
+            if (currentZoom > 3) currentZoom = 3;
+            updateZoom();
+        }
+        
+        function zoomOut() {
+            currentZoom -= 0.25;
+            if (currentZoom < 0.5) currentZoom = 0.5;
+            updateZoom();
+        }
+        
+        function resetZoom() {
+            currentZoom = 1;
+            updateZoom();
+        }
+        
+        function updateZoom() {
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.style.transform = `scale(${currentZoom})`;
+        }
+        
+        // Event Listeners
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+        
+        document.querySelector('.lightbox-content').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        
+        document.querySelector('.zoom-controls').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoImg = document.getElementById('logo');
+            const brandText = document.getElementById('brand-text');
+
+            function showLogo() {
+                logoImg.style.display = 'block';
+                brandText.style.display = 'none';
+            }
+
+            function showBrandTextAsFallback() {
+                logoImg.style.display = 'none';
+                brandText.style.display = 'block';
+            }
+
+            // Always try to show logo first
+            logoImg.onload = showLogo;
+            logoImg.onerror = showBrandTextAsFallback;
+
+            // If logo is already loaded, show it
+            if (logoImg.complete && logoImg.naturalWidth > 0) {
+                showLogo();
+            } else if (logoImg.complete && logoImg.naturalWidth === 0) {
+                // Logo failed to load
+                showBrandTextAsFallback();
+            }
+        });
+    </script>
+</body>
+</html> 
